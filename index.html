@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="tour.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourism.India</title>
+    <link rel="shortcut icon" href="car logo.png" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+      *{
+        margin: 0;
+        padding: 0;
+      }
+        body,html{
+            width: 100%;
+            padding: 0px;
+            margin: 0px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        .navbar{
+          height: 100px;
+          width: 100%;
+          margin-top: -150px;
+          position: fixed;
+            background-color: rgb(227, 234, 232);
+          padding: 8px 16px;
+          
+          
+        }
+        .navitem,.navbar-nav{
+          position: fixed;
+            display: inline;
+        }
+        .navbar-nav{
+          position: fixed;
+            border-top: 3px solid green;
+            
+        }
+
+        .navlink{
+            margin-left: 40px;
+        transition: color 0.5s;
+        }
+        .navlink:hover{
+            color: rgb(17, 242, 51);
+            
+        }
+        .navlink,.navbarbrand{
+            text-decoration: none;
+
+            font-size: 20px;
+            text-transform: uppercase;
+            color: black;
+        }
+        .navbarbrand{
+            font-size: 25px;
+          letter-spacing: 1px;
+          margin-left: 60px;
+        }
+        .navbar img{
+            height: 70px;
+            width: 70px;
+            border-radius: 50%;
+            position: relative;
+            top: 10px;
+        }
+        .navbarbrand span{
+            font-size: 40px;
+            color:crimson  !important;
+        }
+        .banner{
+            height: 700px;
+            background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(t1.avif);
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: 100% 100%;
+            
+          
+        }
+        .bannercard{
+            background-color: rgba(0,0,0,0.4);
+            color: whitesmoke;
+            width: 45%;
+            border-top: 3px solid rgb(9, 201, 9);
+            margin:150px auto;padding: 20px;  
+            font-size: 16px;
+            position: relative;
+            top: 200px;
+            left: 20px;
+            text-align: justify;
+          
+
+        }
+        .bnbtn{
+            border: 2px solid green;
+            padding: 10px 18px;
+            border-radius: 10%;
+            background-color: transparent;
+            color: antiquewhite;
+            margin-left: 230px;
+            transition:background-color 0.5s;
+        }
+        .bnbtn:hover{
+            background-color: rgb(7, 192, 35);
+        }
+        .imagesection img{
+            height: 200px;
+            width: 330px;
+            display: inline-block;
+            padding: 45px 75px;
+        }
+        .contact{
+            height: 10px;
+            width: 500px;
+            position: absolute;
+          top: 20px;
+          left: 200px;
+          
+          }
+          .contact a{
+            color: black;
+          }
+          .mail{
+            height: 10px;
+            width: 500px;
+            position: relative;
+            top: -70px;
+            left: 400px;
+          }
+          .mail a{
+            color: black;
+            text-decoration: none;
+          }
+          .icons{
+            position: absolute;
+            top: 20px;
+            left: 900px;
+            padding-left: 40px;
+            word-spacing: 50px;
+          }
+          .bannercard a{
+          
+            border-radius: 5px;
+            position: relative;
+            top: 120px;
+            left: -140px;
+            font-size: 22px;
+            background-color: black;
+            color: antiquewhite;
+            text-decoration: none;
+          }
+          .bannercard a:hover{
+            color: red;
+          }
+          .home{
+            height: 500px;
+            width: 100%;
+            background-color: antiquewhite;
+            margin-top: -22px;
+          }
+          .inerhome1{
+            height: 300px;
+            width: 600px;
+          }
+          .inerhome2{
+            height: 300px;
+            width: 500px;
+            position: relative;
+            top: -300px;
+            left: 820px;
+          }
+          .inerhome2 p{
+          text-align: justify;
+          font-size: 20px;
+          }
+          .inlist{
+            font-size: 20px;
+          }
+          .inerhome1 h1{
+            font-size: 35px;
+          }
+          .inerhome1 h2{
+            font-size: 25px;
+            position: relative;
+            top: 120px;
+          }
+          .jon{
+            height: 550px;
+            width: 100%;
+          }
+          .jon p{
+            font-size: 20px;
+            text-align: justify;
+          }
+          .rentals{
+            height: 500px;
+            width: 100%;
+            background-color: antiquewhite;
+          }
+          .rent1{
+            height: 400px;
+            width: 400px;
+            display: inline-block;
+          }
+          .rent2{
+            height: 400px;
+            width: 600px;
+            display: inline-block;
+            position: relative;
+            left: 300px;
+            text-align: justify;
+            font-size: 18px;
+          }
+          .rentals h1{
+            font-size: 25px;
+            text-align: center;
+          }
+          .rent1 h1{
+            position: relative;
+            top: -150px;
+          }
+          .rent1 h2{
+            position: relative;
+            top: -100px;
+          }
+          .rent1 button{
+            height: 50px;
+            width: 150px;
+            background-color: aqua;
+            color: red;
+            position: relative;
+            left: 150px;
+            font-size: 15px;
+          }
+          
+        .ite a  {
+          padding-right:155px;
+          padding-left: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="banner">
+    <nav class="navbar">
+        <header style="background-color: rgb(89, 255, 80); opacity: 0.4; left: 0;">
+          <a href="" class="navbarbrand"><span>Tourism.</span>India</a>
+        </header>
+        <div class="ite">
+          <a href="#home"class="navlink">HOME</a>
+          <a href="#service"class="navlink">SERVICES</a>
+          <a href="Places.html"class="navlink">TOURISM PLACES</a>
+          <a href="login.html"class="navlink">LOGIN</a>
+        </div>
+    </nav>
+
+    
+    <div class="bannercard">
+        <h1>Best Tourism Places to Visit</h1>
+        <p>Here's a list of the top 75 Best Tourist Places to See in India for a perfect holiday or a trip to India. India is a land of a variety of destinations from hill stations to beaches to spiritual places and more. India is the 7th largest country in the world and 2nd largest in terms of population. India is known for its unity in diversity. There are the Himalayas, the highest mountain ranges in the northern part of India, there is a vast coastline in the southern part of India on both sides, making South India a peninsula. On the west, there is the massive Thar Desert in Rajasthan, and there are wildlife, forests, spiritual places, religious places of Hindus, Muslims, Sikhs, Jains, Buddhists, Christians and people from other religions.</p>
+        <button class="bnbtn">Read More</button>
+    </div>
+</div>
+<div class="jon" id="service">
+        <h1 ><br><br><br>SERVICES</h1>
+        <div class="imagesection">
+            <img src="s1.png" alt="">
+            <img src="s2.svg" alt="">
+            <img src="s3.avif" alt="">
+        </div>
+    <div>
+        <p>The travel and tourism industry has always been an important part of the service sector in many countries. It is an active contributor to the growth of the economy. It also plays a part in the creation of employment in the local sphere and better international relations. While the tourism industry initially focused on assisting in the planning and reserving elements on any trip, technology has deepened the relationship between the service provider and the consumers. Being a dynamic industry that depends on the whims of its customers, it becomes important for it to constantly evolve.</p>
+    </div>
+    </div><br>
+    <div class="rentals" id="rent">
+        <h1><br>Data Scraping In Travel & Tourism:</h1>
+        <div class="rent1">
+            <img style="position: relative; top: 1%; height: 350px; width: 650px; left:10px" src="s4.jpg" alt=""><br>
+        </div>
+        <div class="rent2">
+            <p><br><br><br>From movies and film, to photoshoots, commercials, sitcoms, TV, series, ad campaigns, parties and more, we've got some of the most unique vehicles available in Southern California and other locations!
+
+                Our fleet includes classic cars and trucks, exotics, luxury vehicles, and more from all eras.  
+                
+                We have a large in-house fleet with over 250+ vehicles located at our warehouse facility in Los Angeles, CA and can transport our vehicles anywhere! We also store additional vehicles from our fleet across the United States with vehicles currently in Arizona, Nevada, Texas, Florida, Virginia Connecticut, New York, Maine, and Illinois.
+                
+                Our rental vehicle services include transportation, custom builds, consultation, design, engineering and more!
+                
+                We make rentals as easy, painless and as quick as possible.  Have a particular car in mind?  It's almost a sure thing that we'll have it, and if we don't, we can take the headache away from you and locate it for you.  Our vehicles have been featured in major movies, luxury brand photoshoots and more. 
+                
+                Check out some of our recent work below!</p>
+        </div>
+    </div>
+
+</body>
+</html>
